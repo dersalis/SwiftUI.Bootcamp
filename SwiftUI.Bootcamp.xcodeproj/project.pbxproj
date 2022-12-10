@@ -11,6 +11,7 @@
 		DA2B6F96294525C0008EF0BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B6F95294525C0008EF0BC /* ContentView.swift */; };
 		DA2B6F98294525C2008EF0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2B6F97294525C2008EF0BC /* Assets.xcassets */; };
 		DA2B6F9B294525C2008EF0BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2B6F9A294525C2008EF0BC /* Preview Assets.xcassets */; };
+		DA2B6FA429453AF5008EF0BC /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B6FA329453AF5008EF0BC /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DA2B6F95294525C0008EF0BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA2B6F97294525C2008EF0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2B6F9A294525C2008EF0BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2B6FA329453AF5008EF0BC /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		DA2B6F92294525C0008EF0BC /* SwiftUI.Bootcamp */ = {
 			isa = PBXGroup;
 			children = (
-				DA2B6F93294525C0008EF0BC /* SwiftUI_BootcampApp.swift */,
+				DA2B6FA1294525E1008EF0BC /* Text */,
+				DA2B6FA2294526F5008EF0BC /* Shapes */,
 				DA2B6F95294525C0008EF0BC /* ContentView.swift */,
+				DA2B6F93294525C0008EF0BC /* SwiftUI_BootcampApp.swift */,
 				DA2B6F97294525C2008EF0BC /* Assets.xcassets */,
 				DA2B6F99294525C2008EF0BC /* Preview Content */,
 			);
@@ -65,6 +69,21 @@
 				DA2B6F9A294525C2008EF0BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA2B6FA1294525E1008EF0BC /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B6FA329453AF5008EF0BC /* TextView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		DA2B6FA2294526F5008EF0BC /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2B6FA429453AF5008EF0BC /* TextView.swift in Sources */,
 				DA2B6F96294525C0008EF0BC /* ContentView.swift in Sources */,
 				DA2B6F94294525C0008EF0BC /* SwiftUI_BootcampApp.swift in Sources */,
 			);
@@ -264,17 +284,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI.Bootcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = LYX7J9V6K6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Bootcamp";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,17 +316,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI.Bootcamp/Preview Content\"";
 				DEVELOPMENT_TEAM = LYX7J9V6K6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "SwiftUI Bootcamp";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
